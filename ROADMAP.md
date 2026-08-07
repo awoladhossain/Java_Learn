@@ -43,7 +43,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
     jar -cvfe App.jar com.example.Main -C out .
     java -jar App.jar
     ```
-- [ ] **1.2 Data Types, Stack vs Heap Memory Allocation**
+- [x] **1.2 Data Types, Stack vs Heap Memory Allocation**
   - **Primitives:** `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`.
   - **Reference Types:** Class types, Arrays, Interfaces.
   - Stack Frame allocation for primitives vs Heap allocation for Objects.

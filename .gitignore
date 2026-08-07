@@ -1,0 +1,13 @@
+# Build output
+**/out/
+*.class
+*.jar
+*.hprof
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+
+# OS specific
+.DS_Store
