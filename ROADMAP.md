@@ -52,7 +52,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Arithmetic, Logical, Bitwise (`&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`), and Ternary operators.
   - Decision making: `if-else`, `switch` statements & expressions.
   - Iteration: `for`, `while`, `do-while`, enhanced `for-each`.
-- [ ] **1.4 String Handling & Memory Optimization**
+- [x] **1.4 String Handling & Memory Optimization**
   - Immutability of `String` & String Constant Pool (SCP) in Heap memory.
   - `String` vs `StringBuilder` vs `StringBuffer` (Thread safety vs Allocation performance).
   - One-dimensional and Multi-dimensional Arrays.
