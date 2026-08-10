@@ -64,7 +64,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
 ## 📦 Phase 2: Object-Oriented Programming (OOP) & Domain Architecture
 > **Goal:** Build modular, scalable, and maintainable software systems.
 
-- [ ] **2.1 Classes, Objects & Constructors**
+- [x] **2.1 Classes, Objects & Constructors**
   - State (fields) and Behavior (methods).
   - Constructor types: Default, Parameterized, Copy Constructors, Private Constructors (Singleton pattern).
   - Keywords: `this`, `super`, `static` (class variable vs instance variable memory layout), `final` (variables, methods, classes).
