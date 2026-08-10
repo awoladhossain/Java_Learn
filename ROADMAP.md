@@ -68,7 +68,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - State (fields) and Behavior (methods).
   - Constructor types: Default, Parameterized, Copy Constructors, Private Constructors (Singleton pattern).
   - Keywords: `this`, `super`, `static` (class variable vs instance variable memory layout), `final` (variables, methods, classes).
-- [ ] **2.2 The 4 Pillars of OOP**
+- [x] **2.2 The 4 Pillars of OOP**
   - **Encapsulation:** Access modifiers (`private`, `package-private`, `protected`, `public`), getters/setters, domain invariants.
   - **Inheritance:** Class hierarchies (`extends`), single inheritance, method overriding `@Override` vs overloading.
   - **Polymorphism:** Dynamic Method Dispatch (runtime binding) vs Method Overloading (compile-time polymorphism).
