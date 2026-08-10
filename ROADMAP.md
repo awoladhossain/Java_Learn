@@ -48,7 +48,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - **Reference Types:** Class types, Arrays, Interfaces.
   - Stack Frame allocation for primitives vs Heap allocation for Objects.
   - Type Casting: Implicit (Widening) vs Explicit (Narrowing) & Overflow/Underflow hazards.
-- [ ] **1.3 Control Flow & Operators**
+- [x] **1.3 Control Flow & Operators**
   - Arithmetic, Logical, Bitwise (`&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`), and Ternary operators.
   - Decision making: `if-else`, `switch` statements & expressions.
   - Iteration: `for`, `while`, `do-while`, enhanced `for-each`.
