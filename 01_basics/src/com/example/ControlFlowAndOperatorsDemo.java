@@ -73,16 +73,17 @@ public class ControlFlowAndOperatorsDemo {
 
         // B. Short-Circuit Logical Operators (&&, ||) vs Bitwise/Boolean (&, |)
         System.out.println("\n   📍 Logical & Short-Circuit Mechanics:");
-        boolean sideEffectExecuted = false;
 
-        // Short-circuit AND (&&): Evaluation stops because first operand is false
-        boolean shortCircuitResult = (false && triggerSideEffect());
-        System.out.println("      • (false && triggerSideEffect()) -> " + shortCircuitResult 
+        boolean isServiceOnline = false;
+
+        // Short-circuit AND (&&): Evaluation stops because first operand (isServiceOnline) is false at runtime
+        boolean shortCircuitResult = (isServiceOnline && triggerSideEffect());
+        System.out.println("      • (isServiceOnline && triggerSideEffect()) -> " + shortCircuitResult 
                 + " [Side effect triggered? false]");
 
         // Non-short-circuit AND (&): BOTH operands evaluated regardless of first operand
-        boolean nonShortCircuitResult = (false & triggerSideEffect());
-        System.out.println("      • (false & triggerSideEffect())  -> " + nonShortCircuitResult 
+        boolean nonShortCircuitResult = (isServiceOnline & triggerSideEffect());
+        System.out.println("      • (isServiceOnline & triggerSideEffect())  -> " + nonShortCircuitResult 
                 + " [Side effect triggered? TRUE!]");
 
         // C. Ternary Operator (? :)
