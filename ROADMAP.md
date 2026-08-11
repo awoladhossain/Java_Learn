@@ -73,7 +73,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - **Inheritance:** Class hierarchies (`extends`), single inheritance, method overriding `@Override` vs overloading.
   - **Polymorphism:** Dynamic Method Dispatch (runtime binding) vs Method Overloading (compile-time polymorphism).
   - **Abstraction:** `abstract` classes vs `interface` contracts.
-- [ ] **2.3 Interfaces & Flexible System Design**
+- [x] **2.3 Interfaces & Flexible System Design**
   - `interface` fields (`public static final`), `default` methods, `static` methods, `private` helper methods in interfaces.
   - Multiple interface implementation.
   - **Composition Over Inheritance** principle (Favoring `has-a` over `is-a`).
