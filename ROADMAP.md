@@ -77,7 +77,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - `interface` fields (`public static final`), `default` methods, `static` methods, `private` helper methods in interfaces.
   - Multiple interface implementation.
   - **Composition Over Inheritance** principle (Favoring `has-a` over `is-a`).
-- [ ] **2.4 Software Design Principles (SOLID & Beyond)**
+- [x] **2.4 Software Design Principles (SOLID & Beyond)**
   - **S**ingle Responsibility Principle (SRP)
   - **O**pen/Closed Principle (OCP)
   - **L**iskov Substitution Principle (LSP)
