@@ -90,7 +90,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
 ## 🛠️ Phase 3: Core Internals (Collections, Generics & Exception Engineering)
 > **Goal:** Master Java's built-in data structures, type safety, and robust error management.
 
-- [ ] **3.1 Exception Handling & Fault Tolerance**
+- [x] **3.1 Exception Handling & Fault Tolerance**
   - Exception Hierarchy: `Throwable` → `Error` vs `Exception` → `RuntimeException` (Unchecked) vs Checked Exceptions.
   - `try-catch-finally` execution semantics.
   - `try-with-resources` & `AutoCloseable` for automatic resource cleanup (preventing memory/file descriptor leaks).
