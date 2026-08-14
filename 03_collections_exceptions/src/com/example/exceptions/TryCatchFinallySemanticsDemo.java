@@ -119,6 +119,7 @@ public class TryCatchFinallySemanticsDemo {
         }
     }
 
+    @SuppressWarnings("finally")
     private static void flakyFinallyExecution() {
         try {
             throw new IllegalStateException("Primary Failure in Try Block");
