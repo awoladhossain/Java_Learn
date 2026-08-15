@@ -96,7 +96,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - `try-with-resources` & `AutoCloseable` for automatic resource cleanup (preventing memory/file descriptor leaks).
   - Creating Custom Domain Exceptions with explicit error codes.
   - Exception Chaining (`Throwable cause`) & suppressing exceptions.
-- [ ] **3.2 Java Collections Framework (JCF) Deep-Dive**
+- [x] **3.2 Java Collections Framework (JCF) Deep-Dive**
   - **Lists:** `ArrayList` (dynamic array resizing factor 1.5), `LinkedList` (doubly linked list overhead), `Vector` / `Stack`.
   - **Sets:** `HashSet` (underlying HashMap mechanism), `LinkedHashSet`, `TreeSet` (Red-Black self-balancing tree, `Comparable` vs `Comparator`).
   - **Maps:** `HashMap` internal mechanics (Buckets array, `hashCode()` distribution, `equals()` contract, rehashing threshold `loadFactor=0.75`, Treeification to Red-Black tree in Java 8+ when bin count > 8), `LinkedHashMap`, `TreeMap`.
