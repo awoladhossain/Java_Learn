@@ -102,7 +102,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - **Maps:** `HashMap` internal mechanics (Buckets array, `hashCode()` distribution, `equals()` contract, rehashing threshold `loadFactor=0.75`, Treeification to Red-Black tree in Java 8+ when bin count > 8), `LinkedHashMap`, `TreeMap`.
   - **Queues/Deques:** `ArrayDeque`, `PriorityQueue` (Min/Max Heap), `BlockingQueue`.
   - **Thread-Safe Collections:** `Collections.synchronizedMap()`, `ConcurrentHashMap`, `CopyOnWriteArrayList`.
-- [ ] **3.3 Generics & Type Safety**
+- [x] **3.3 Generics & Type Safety**
   - Generic Classes, Interfaces, and Methods (`<T>`).
   - Bounded Types (`<T extends Comparable<T>>`).
   - Wildcards: Unbounded (`?`), Upper-bounded (`? extends Number`), Lower-bounded (`? super Integer`).
