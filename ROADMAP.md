@@ -107,7 +107,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Bounded Types (`<T extends Comparable<T>>`).
   - Wildcards: Unbounded (`?`), Upper-bounded (`? extends Number`), Lower-bounded (`? super Integer`).
   - Type Erasure & compile-time generic warnings.
-- [ ] **3.4 Advanced Language Features**
+- [x] **3.4 Advanced Language Features**
   - Enums with fields, constructors, and abstract methods.
   - Java Records (`record User(String name, String email) {}`) - canonical constructors, compact constructors.
   - Sealed Classes & Interfaces (`sealed ... permits`).
