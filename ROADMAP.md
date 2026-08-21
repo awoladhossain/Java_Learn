@@ -128,7 +128,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - `transient` keyword for volatile fields.
   - Security risks of Java native serialization.
   - JSON Parsing in Pure Java using standard libraries (e.g. Jackson / Gson without Spring).
-- [ ] **4.3 Native JDBC (Java Database Connectivity)**
+- [x] **4.3 Native JDBC (Java Database Connectivity)**
   - JDBC Architecture: `DriverManager`, `Connection`, `Statement`, `PreparedStatement`, `ResultSet`.
   - Preventing SQL Injection using `PreparedStatement` parameterized queries.
   - Transaction Management in Pure Java:
