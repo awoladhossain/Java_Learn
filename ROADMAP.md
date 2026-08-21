@@ -118,7 +118,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
 ## 💾 Phase 4: Java I/O, NIO.2, Serialization & Native Database Connectivity (JDBC)
 > **Goal:** Handle file systems, network streams, and persistence **without relying on frameworks**.
 
-- [ ] **4.1 Java I/O & NIO.2 (New I/O)**
+- [x] **4.1 Java I/O & NIO.2 (New I/O)**
   - Byte Streams (`InputStream`, `OutputStream`) vs Character Streams (`Reader`, `Writer`).
   - Buffered Streams (`BufferedReader`, `BufferedWriter`) for reduced disk I/O syscalls.
   - Java NIO.2: `Path`, `Paths`, `Files`, `FileSystem`.
