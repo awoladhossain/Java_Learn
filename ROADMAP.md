@@ -123,7 +123,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Buffered Streams (`BufferedReader`, `BufferedWriter`) for reduced disk I/O syscalls.
   - Java NIO.2: `Path`, `Paths`, `Files`, `FileSystem`.
   - Non-blocking I/O concepts: `Channels`, `Buffers` (`ByteBuffer`), and `Selectors`.
-- [ ] **4.2 Serialization & Data Formats**
+- [x] **4.2 Serialization & Data Formats**
   - `Serializable` interface & `serialVersionUID`.
   - `transient` keyword for volatile fields.
   - Security risks of Java native serialization.
