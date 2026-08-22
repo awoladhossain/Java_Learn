@@ -169,7 +169,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
 ## 🧠 Phase 6: Multithreading, JVM Internals & Memory Profiling (Senior SRE Core)
 > **Goal:** Understand low-level execution, diagnose high CPU/Memory issues, and master concurrency.
 
-- [ ] **6.1 Java Memory Model (JMM) & Multithreading**
+- [x] **6.1 Java Memory Model (JMM) & Multithreading**
   - Thread lifecycle: New, Runnable, Blocked, Waiting, Timed_Waiting, Terminated.
   - Creating Threads: `Thread`, `Runnable`, `Callable<V>`, `Future<V>`.
   - Synchronization & Thread Safety: `synchronized` blocks/methods, intrinsic locks (monitor locks).
