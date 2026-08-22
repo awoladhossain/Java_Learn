@@ -149,7 +149,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Lambda Expressions & Method References (`Class::method`).
   - Built-in Functional Interfaces: `Supplier<T>`, `Consumer<T>`, `Function<T, R>`, `Predicate<T>`, `UnaryOperator<T>`.
   - Custom `@FunctionalInterface` definitions.
-- [ ] **5.2 Java Streams API**
+- [x] **5.2 Java Streams API**
   - Stream Life Cycle: Source → Intermediate Operations (`filter`, `map`, `flatMap`, `sorted`, `distinct`) → Terminal Operations (`collect`, `reduce`, `findFirst`, `anyMatch`).
   - Collectors (`Collectors.toList()`, `groupingBy()`, `partitioningBy()`, `joining()`).
   - Primitive Streams (`IntStream`, `LongStream`, `DoubleStream`).
