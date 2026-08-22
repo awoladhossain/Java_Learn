@@ -145,7 +145,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
 ## ⚡ Phase 5: Modern Java (Java 8 to 21) & Declarative Programming
 > **Goal:** Write clean, high-throughput functional code and leverage Project Loom Virtual Threads.
 
-- [ ] **5.1 Functional Programming Essentials**
+- [x] **5.1 Functional Programming Essentials**
   - Lambda Expressions & Method References (`Class::method`).
   - Built-in Functional Interfaces: `Supplier<T>`, `Consumer<T>`, `Function<T, R>`, `Predicate<T>`, `UnaryOperator<T>`.
   - Custom `@FunctionalInterface` definitions.
