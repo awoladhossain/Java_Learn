@@ -159,7 +159,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Local Variable Type Inference (`var`).
   - Pattern Matching for `instanceof` and `switch` expressions.
   - Text Blocks (`""" ... """`).
-- [ ] **5.4 Project Loom & Concurrency Evolution (Java 21+)**
+- [x] **5.4 Project Loom & Concurrency Evolution (Java 21+)**
   - Platform Threads (OS-bound) vs **Virtual Threads** (Carried by carrier threads).
   - Creating Virtual Threads: `Thread.ofVirtual().start(...)`, `Executors.newVirtualThreadPerTaskExecutor()`.
   - Structured Concurrency & Scoped Values.
