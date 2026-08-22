@@ -154,7 +154,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Collectors (`Collectors.toList()`, `groupingBy()`, `partitioningBy()`, `joining()`).
   - Primitive Streams (`IntStream`, `LongStream`, `DoubleStream`).
   - Parallel Streams: Mechanics, `ForkJoinPool.commonPool()`, and potential thread starvation traps.
-- [ ] **5.3 Modern Language Innovations**
+- [x] **5.3 Modern Language Innovations**
   - `Optional<T>` API: Eliminating `NullPointerException` cleanly (`orElseGet`, `ifPresentOrElse`, `flatMap`).
   - Local Variable Type Inference (`var`).
   - Pattern Matching for `instanceof` and `switch` expressions.
