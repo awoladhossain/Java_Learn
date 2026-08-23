@@ -205,7 +205,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
 ## 🏗️ Phase 7: Software Engineering Practices & Design Patterns in Pure Java
 > **Goal:** Write clean, testable, and enterprise-grade Java code without magic.
 
-- [ ] **7.1 Unit & Integration Testing (Pure Java)**
+- [x] **7.1 Unit & Integration Testing (Pure Java)**
   - **JUnit 5 (Jupiter):** `@Test`, `@BeforeEach`, `@AfterEach`, `@ParameterizedTest`, `@Nested`, Assertions.
   - **Mockito Framework:** `@Mock`, `@InjectMocks`, `when().thenReturn()`, `verify()`, ArgumentMatchers.
   - TDD (Test-Driven Development) basics.
