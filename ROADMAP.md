@@ -178,7 +178,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Thread Pools & `ExecutorService`: `FixedThreadPool`, `CachedThreadPool`, `ScheduledExecutorService`, handling task rejection policies.
   - Atomic Variables & Lock-free Concurrency: `AtomicInteger`, `AtomicReference`, Compare-And-Swap (CAS) instructions.
   - Deadlocks, Livelocks, Race Conditions, Thread Starvation, and generating/analyzing **Thread Dumps** (`jstack`, `jcmd`).
-- [ ] **6.2 JVM Architecture & Internal Subsystems**
+- [x] **6.2 JVM Architecture & Internal Subsystems**
   - **Class Loader Subsystem:** Loading, Linking (Verification, Preparation, Resolution), Initialization. Parent Delegation Model.
   - **Runtime Data Areas:**
     - Stack Area (Frame storage per thread, `StackOverflowError`).
@@ -186,7 +186,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
     - Metaspace (Native memory for class metadata, replacing PermGen, `OutOfMemoryError: Metaspace`).
     - Program Counter (PC) Registers & Native Method Stacks.
   - **Execution Engine:** Interpreter vs JIT (Just-In-Time) Compiler (C1/C2 compilers, On-Stack Replacement), Native Method Interface (JNI).
-- [ ] **6.3 Garbage Collection (GC) Algorithms & Memory Tuning**
+- [x] **6.3 Garbage Collection (GC) Algorithms & Memory Tuning**
   - Garbage Collectors: Serial GC, Parallel GC, **G1GC** (Garbage-First), **ZGC** (Scalable low-latency GC), Shenandoah.
   - GC Phases: Mark, Sweep, Compact. Stop-The-World (STW) pauses.
   - Diagnosing `OutOfMemoryError` (OOM) types: `Java heap space`, `GC overhead limit exceeded`, `Metaspace`, `Unable to create new native thread`.

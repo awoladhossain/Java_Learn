@@ -103,15 +103,30 @@ public class AdvancedLocksAndUtilitiesDemo {
             }
         };
 
+        Runnable writerTask = () -> {
+            writeLock.lock();
+            try {
+                System.out.println("   [WRITER] Exclusive WriteLock acquired by: " + Thread.currentThread().getName());
+                Thread.sleep(30);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            } finally {
+                writeLock.unlock();
+            }
+        };
+
         Thread r1 = new Thread(readerTask, "reader-1");
         Thread r2 = new Thread(readerTask, "reader-2");
+        Thread w1 = new Thread(writerTask, "writer-1");
 
         r1.start();
         r2.start();
+        w1.start();
 
         try {
             r1.join();
             r2.join();
+            w1.join();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }

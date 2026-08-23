@@ -60,54 +60,54 @@ public class ThreadPoolsAndRejectionDemo {
 
         // A. AbortPolicy (Throws RejectedExecutionException)
         System.out.println("\n--- A. AbortPolicy (Default Fail-Fast) ---");
-        ThreadPoolExecutor abortPool = new ThreadPoolExecutor(
+        try (ThreadPoolExecutor abortPool = new ThreadPoolExecutor(
             1, 1, 0L, TimeUnit.MILLISECONDS,
             new ArrayBlockingQueue<>(2),
             new ThreadPoolExecutor.AbortPolicy()
-        );
-
-        try {
-            for (int i = 1; i <= 4; i++) {
-                final int taskId = i;
-                abortPool.submit(() -> blockTask(taskId));
+        )) {
+            try {
+                for (int i = 1; i <= 4; i++) {
+                    final int taskId = i;
+                    abortPool.submit(() -> blockTask(taskId));
+                }
+            } catch (RejectedExecutionException e) {
+                System.out.println("   [REJECTION-ABORT] Task #4 was rejected with exception: " + e.getClass().getSimpleName());
+            } finally {
+                abortPool.shutdownNow();
             }
-        } catch (RejectedExecutionException e) {
-            System.out.println("   [REJECTION-ABORT] Task #4 was rejected with exception: " + e.getClass().getSimpleName());
-        } finally {
-            abortPool.shutdownNow();
         }
 
         // B. CallerRunsPolicy (Caller Thread Executes Task -> Natural Backpressure!)
         System.out.println("\n--- B. CallerRunsPolicy (Backpressure Control) ---");
-        ThreadPoolExecutor callerRunsPool = new ThreadPoolExecutor(
+        try (ThreadPoolExecutor callerRunsPool = new ThreadPoolExecutor(
             1, 1, 0L, TimeUnit.MILLISECONDS,
             new ArrayBlockingQueue<>(2),
             new ThreadPoolExecutor.CallerRunsPolicy()
-        );
+        )) {
+            for (int i = 1; i <= 4; i++) {
+                final int taskId = i;
+                System.out.println("   Submitting Task #" + taskId + " from thread: " + Thread.currentThread().getName());
+                callerRunsPool.submit(() -> blockTask(taskId));
+            }
 
-        for (int i = 1; i <= 4; i++) {
-            final int taskId = i;
-            System.out.println("   Submitting Task #" + taskId + " from thread: " + Thread.currentThread().getName());
-            callerRunsPool.submit(() -> blockTask(taskId));
+            callerRunsPool.shutdown();
+            try { callerRunsPool.awaitTermination(1, TimeUnit.SECONDS); } catch (InterruptedException ignored) {}
         }
-
-        callerRunsPool.shutdown();
-        try { callerRunsPool.awaitTermination(1, TimeUnit.SECONDS); } catch (InterruptedException ignored) {}
 
         // C. DiscardPolicy (Silently Drops Overflow Tasks)
         System.out.println("\n--- C. DiscardPolicy (Silent Drop) ---");
-        ThreadPoolExecutor discardPool = new ThreadPoolExecutor(
+        try (ThreadPoolExecutor discardPool = new ThreadPoolExecutor(
             1, 1, 0L, TimeUnit.MILLISECONDS,
             new ArrayBlockingQueue<>(2),
             new ThreadPoolExecutor.DiscardPolicy()
-        );
-
-        for (int i = 1; i <= 4; i++) {
-            final int taskId = i;
-            discardPool.submit(() -> blockTask(taskId));
+        )) {
+            for (int i = 1; i <= 4; i++) {
+                final int taskId = i;
+                discardPool.submit(() -> blockTask(taskId));
+            }
+            System.out.println("   [REJECTION-DISCARD] Submitted 4 tasks to pool with capacity 3. Task #4 was silently dropped.");
+            discardPool.shutdownNow();
         }
-        System.out.println("   [REJECTION-DISCARD] Submitted 4 tasks to pool with capacity 3. Task #4 was silently dropped.");
-        discardPool.shutdownNow();
 
         // ==========================================
         // 3. Senior SRE Thread Pool Tuning Golden Rules
