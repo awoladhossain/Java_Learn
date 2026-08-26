@@ -222,7 +222,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
 ## 🚀 Phase 8: Pure Java Capstone Projects (MANDATORY MILESTONE)
 > **Goal:** Build full-fledged, high-performance applications in **Pure Java** before touching Spring Boot!
 
-### 🔨 Project 1: High-Performance Multi-Threaded HTTP Web Server & Log Analyzer from Scratch
+### 🔨 - [x] Project 1: High-Performance Multi-Threaded HTTP Web Server & Log Analyzer from Scratch
 - **Tech Stack:** Pure Java 21 (NIO / Sockets, Virtual Threads / ThreadPool, HikariCP, JUnit 5).
 - **Features:**
   - HTTP 1.1 request parser and response writer built directly over `ServerSocket` or `ServerSocketChannel`.
