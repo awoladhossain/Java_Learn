@@ -24,9 +24,9 @@ public class TestRunnerMain {
 
         long startTime = System.currentTimeMillis();
 
-        // 1. Build JUnit Platform Discovery Request targeting com.example.testing package
+        // 1. Build JUnit Platform Discovery Request targeting com.example package hierarchy
         LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request()
-                .selectors(selectPackage("com.example.testing"))
+                .selectors(selectPackage("com.example"))
                 .build();
 
         Launcher launcher = LauncherFactory.create();

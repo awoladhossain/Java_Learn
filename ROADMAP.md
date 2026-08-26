@@ -209,7 +209,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - **JUnit 5 (Jupiter):** `@Test`, `@BeforeEach`, `@AfterEach`, `@ParameterizedTest`, `@Nested`, Assertions.
   - **Mockito Framework:** `@Mock`, `@InjectMocks`, `when().thenReturn()`, `verify()`, ArgumentMatchers.
   - TDD (Test-Driven Development) basics.
-- [ ] **7.2 Software Design Patterns (Gang of Four - GoF)**
+- [x] **7.2 Software Design Patterns (Gang of Four - GoF)**
   - **Creational:** Singleton (Thread-safe Double-Checked Locking & Enum Singleton), Factory Method, Abstract Factory, Builder (Fluent Interface), Prototype.
   - **Structural:** Adapter, Decorator (e.g. Java I/O streams), Proxy (Dynamic Proxies `java.lang.reflect.Proxy`), Facade, Composite.
   - **Behavioral:** Strategy, Observer, Command, Template Method, State, Chain of Responsibility.
