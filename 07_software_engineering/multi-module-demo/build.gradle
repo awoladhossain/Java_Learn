@@ -1,0 +1,32 @@
+/*
+ * Multi-Module Gradle Root Build Script (build.gradle)
+ * Configures common plugins, repositories, and dependency management across subprojects.
+ */
+
+allprojects {
+    group = 'com.example.multimodule'
+    version = '1.0.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+    }
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+    }
+
+    tasks.named('test') {
+        useJUnitPlatform()
+    }
+}

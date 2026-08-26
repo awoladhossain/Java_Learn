@@ -213,7 +213,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - **Creational:** Singleton (Thread-safe Double-Checked Locking & Enum Singleton), Factory Method, Abstract Factory, Builder (Fluent Interface), Prototype.
   - **Structural:** Adapter, Decorator (e.g. Java I/O streams), Proxy (Dynamic Proxies `java.lang.reflect.Proxy`), Facade, Composite.
   - **Behavioral:** Strategy, Observer, Command, Template Method, State, Chain of Responsibility.
-- [ ] **7.3 Build Tools Mastery (Maven & Gradle)**
+- [x] **7.3 Build Tools Mastery (Maven & Gradle)**
   - **Maven:** Lifecycle (`clean`, `compile`, `test`, `package`, `verify`, `install`), `pom.xml`, dependency scopes (`compile`, `provided`, `test`, `runtime`), transitives & exclusions.
   - **Gradle:** `build.gradle`, task execution, plugins, multi-module project structure.
 

@@ -1,0 +1,9 @@
+/*
+ * Multi-Module Gradle Project Settings (settings.gradle)
+ * Defines the root project name and sub-module inclusion hierarchy.
+ */
+
+rootProject.name = 'enterprise-multi-module'
+
+include 'core'
+include 'app'

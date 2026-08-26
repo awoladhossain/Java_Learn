@@ -1,0 +1,62 @@
+/*
+ * Phase 7.3: Gradle Build Script (build.gradle)
+ * Demonstrates plugins, task definitions, dependency configurations, and task execution graphs.
+ */
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'com.example.buildtools.BuildToolsRunnerMain'
+}
+
+dependencies {
+    // 1. Implementation (equivalent to Maven 'compile', not leaked to consumers)
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+
+    // 2. CompileOnly (equivalent to Maven 'provided')
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // 3. RuntimeOnly (equivalent to Maven 'runtime')
+    runtimeOnly 'com.h2database:h2:2.2.224'
+
+    // 4. TestImplementation & TestRuntimeOnly (equivalent to Maven 'test')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+
+    // 5. Transitive Exclusion in Gradle
+    testImplementation('org.mockito:mockito-core:5.11.0') {
+        exclude group: 'net.bytebuddy', module: 'byte-buddy-agent'
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// Custom Gradle Task
+tasks.register('buildInfo') {
+    group = 'documentation'
+    description = 'Prints build environment metadata and dependency scopes'
+    doLast {
+        println "Gradle Build Group: ${project.group}"
+        println "Gradle Build Version: ${project.version}"
+        println "Target Java Version: ${java.toolchain.languageVersion.get()}"
+    }
+}
