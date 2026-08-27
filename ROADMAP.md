@@ -231,7 +231,7 @@ Welcome to the **Master Java Development & Production Engineering** roadmap. Des
   - Embedded log-parsing algorithm using Java Streams & Regex to index server log files.
   - In-memory metrics counter using `ConcurrentHashMap` and `LongAdder`.
 
-### 🔨 Project 2: Production-Grade Core Banking & Transaction Engine with JDBC
+### 🔨 - [x] Project 2: Production-Grade Core Banking & Transaction Engine with JDBC
 - **Tech Stack:** Pure Java 17/21, PostgreSQL / MySQL, HikariCP Connection Pool, Maven, JUnit 5, Mockito.
 - **Features:**
   - Robust domain model (Accounts, Customers, Transactions, Ledger entries) using Records & Sealed Interfaces.
